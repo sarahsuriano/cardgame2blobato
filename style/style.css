@@ -4,3 +4,13 @@
  body{
     background-image: url(img/162464000560d60a051c249_1624640005_3x2_md.jpg);
  }
+ .cartao__conteudo{
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: trasform 300ms ease-in-out;;
+ }
+
+ #cotainer{
+    display: flex;
+    flex-wrap: wrap;
+ }
