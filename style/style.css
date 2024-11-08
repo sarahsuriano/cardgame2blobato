@@ -24,3 +24,7 @@
     padding: 4ram;
     margin-top: 4ram;
  }
+ .cartao__conteudo_resposta p {
+   color: var(--card-front-color);
+   font-weight: 700;
+ }
