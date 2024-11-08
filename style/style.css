@@ -39,3 +39,7 @@
    height: 100%;
    width: 100%;
  }
+ .cartao__conteudo_resposta{
+   transform: rotateY(180deg);
+ }
+ 
