@@ -28,3 +28,6 @@
    color: var(--card-front-color);
    font-weight: 700;
  }
+ .cartao__conteudo_resposta p {
+   transform rotate: (180deg);
+ }
