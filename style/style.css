@@ -1,44 +1,69 @@
 :root{
-    --card-front-color: #ffffff;
-}
- body{
-    background-image: url(img/162464000560d60a051c249_1624640005_3x2_md.jpg);
+   --text-color: #ffffff;
+   --card-front-color: #09683d;
+   --card-back-color: #15AE68;
  }
- .cartao__conteudo{
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: trasform 300ms ease-in-out;;
+ 
+ body {
+   background-color: antiquewhite;
+   font-family: Tomorrow;
  }
+ 
+ 
+ .cartao__conteudo {
+     background-color: var(--card-front-color);
+     text-align: center;
+     height: 100%;
+     transform-style: preserve-3d;
+     transition: transform 300ms ease-in-out;
+   }
+   #container {
+       display: flex;
+       flex-wrap: wrap;
+     }
 
- #cotainer{
-    display: flex;
-    flex-wrap: wrap;
- }
- .cartao {
-    margin:  1ram 1ram;
-    height: 20ram;
-    flex-grow: 1;
-    flex-basis: calc(33% - 6ram);
- }
- .cartao__conteudo p {
-    padding: 4ram;
-    margin-top: 4ram;
- }
- .cartao__conteudo_resposta p {
-   color: var(--card-front-color);
+     .cartao {
+       margin: 1rem 1rem;
+       height: 20rem;
+       flex-grow: 1;
+       flex-basis: calc(33% - 6rem);
+     }
+   
+     .cartao__conteudo p {
+       padding: 4rem;
+       margin-top: 4rem;
+     }
+
+     .cartao__conteudo h3 {
+       color: var(--text-color);
+       border: 1px solid var(--text-color);
+       text-align: left;
+       padding: 0.5rem;
+       position: absolute;
+       margin: 0.6rem;
+       border-radius: 0.6rem;
+       font-size: 1vw;
+       backface-visibility: hidden;
+     }
+
+     
+ .cartao__conteudo__resposta p {
+   color: var(--card-back-color);
    font-weight: 700;
  }
- .cartao__conteudo_resposta p {
-   transform rotate: (180deg);
+
+ .cartao:hover .cartao__conteudo{
+   transform: rotateY(180deg);  
  }
 
- .cartao__conteudo_pergunta,
- .cartao__conteudo_resposta{
-   backface-visibility:hidden;
-   position: absolute;
-   height: 100%;
-   width: 100%;
+ .cartao__conteudo__pergunta,
+ .cartao__conteudo__resposta{
+     backface-visibility: hidden;
+     position: absolute;
+     height: 100%;
+     width: 100%;
  }
- .cartao__conteudo_resposta{
-   transform: rotateY(180deg);
+ .cartao__conteudo__resposta{
+     transform: rotateY(180deg);
  }
+
